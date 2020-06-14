@@ -1,0 +1,1443 @@
+{
+  "intents": [
+    {
+      "intent": "Division",
+      "examples": [
+        {
+          "text": "Where is the 1st division located"
+        },
+        {
+          "text": "What does the 2nd division cover?"
+        },
+        {
+          "text": "What fire stations are located in the 3rd division?"
+        },
+        {
+          "text": "Which division is near me?"
+        },
+        {
+          "text": "Which division covers the west?"
+        }
+      ],
+      "description": "To check if the user is asking about a division of the SCDF in singapore"
+    },
+    {
+      "intent": "Equipment",
+      "examples": [
+        {
+          "text": "How do I maintain my equipment?"
+        },
+        {
+          "text": "How do I clean my equipment?"
+        },
+        {
+          "text": "What equipment is there available?"
+        },
+        {
+          "text": "What equipment does the SCDF have?"
+        },
+        {
+          "text": "List me the equipment that the SCDF has"
+        }
+      ],
+      "description": "Checks if the user is asking about the equipment available in the SCDF"
+    },
+    {
+      "intent": "Illness",
+      "examples": [
+        {
+          "text": "I'm feeling under the weather as of late"
+        },
+        {
+          "text": "I might have fallen ill"
+        },
+        {
+          "text": "I feel sick"
+        },
+        {
+          "text": "I don't feel so good today"
+        },
+        {
+          "text": "I am not feeling very well"
+        }
+      ],
+      "description": "Checks if the user is claiming to be sick"
+    },
+    {
+      "intent": "Announcements",
+      "examples": [
+        {
+          "text": "Read out the daily announcement"
+        },
+        {
+          "text": "Please tell me the daily announcement"
+        },
+        {
+          "text": "Please give me the announcement of the day"
+        },
+        {
+          "text": "I would like the daily announcements please"
+        },
+        {
+          "text": "give me an update on the equipment"
+        },
+        {
+          "text": "Could I have the daily announcement?"
+        }
+      ],
+      "description": "Prompts the chatbot for any daily announcements or updates"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Location",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "EquipmentType",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "2.6 Breathing Apparatus Tender",
+          "synonyms": [
+            "Breathing",
+            "Apparatus",
+            "Breathing Apparatus Tender",
+            "2.6) Breathing Apparatus Tender",
+            "2.6",
+            "BAT"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "4.3 Hazmat Command Vehicle",
+          "synonyms": [
+            "Hazmat",
+            "Hazmat Command Vehicle",
+            "4.3) Hazmat Command Vehicle",
+            "4.3",
+            "HCV"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "5. Special Vehicles",
+          "synonyms": [
+            "Special",
+            "Special Vehicles",
+            "5) Special Vehicles",
+            "5"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "List of Equipment",
+          "synonyms": [
+            "Equipment",
+            "Equipment list",
+            "List of equipment"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "5.1 DART Rescue Vehicle",
+          "synonyms": [
+            "DART",
+            "Rescue",
+            "DART Rescue Vehicle",
+            "5.1) DART Rescue Vehicle",
+            "5.1",
+            "DRV"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "5.2 Fireboats",
+          "synonyms": [
+            "Fireboat",
+            "Fireboats",
+            "5.2) Fireboats",
+            "5.2"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "1. Paramedical Response Vehiciles",
+          "synonyms": [
+            "Paramedical",
+            "Response",
+            "Paramedical Response Vehicles",
+            "1) Paramedical Response Vehicles",
+            "1"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "1.1 Ambulance",
+          "synonyms": [
+            "Ambulance",
+            "1.1) Ambulance",
+            "1.1"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "1.2 Medical Support Vehicle",
+          "synonyms": [
+            "Medical",
+            "Support",
+            "Medical Support Vehicle",
+            "MSV",
+            "1.2) Medical Support Vehicle",
+            "1.2"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2. Firefighting Appliances",
+          "synonyms": [
+            "Firefighting",
+            "Appliances",
+            "Firefighting Appliances",
+            "2) Firefighting Appliances",
+            "2"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2.1 Fire Bike",
+          "synonyms": [
+            "Bike",
+            "Fire Bike",
+            "2.1) Fire Bike",
+            "2.1"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2.10 Modular Oil Tank Firefighting System",
+          "synonyms": [
+            "Modular",
+            "Oil",
+            "Tank",
+            "Modular Oil Tank Firefighting System",
+            "2.10) Modular Oil Tank Firefighting System",
+            "2.10",
+            "MOTFS"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2.11 Unmanned Firefighting Machine",
+          "synonyms": [
+            "Unmanned",
+            "Unmanned Firefighting Machine",
+            "UFM",
+            "2.11) Unmanned Firefighting Machine",
+            "2.11"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2.12 Pumper Firefighting Machine",
+          "synonyms": [
+            "Pumper",
+            "Pumper Firefighting Machine",
+            "2.12) Pumper Firefighting Machine",
+            "2.12"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2.2 Light Fire Attack Vehicle",
+          "synonyms": [
+            "Light",
+            "Attack",
+            "Light Fire Attack Vehicile",
+            "2.2) Light Fire Attack Vehicile",
+            "2.2"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2.3 Pump Ladder",
+          "synonyms": [
+            "Pump",
+            "Pump Ladder",
+            "PL",
+            "2.3) Pump Ladder",
+            "2.3"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2.4 Combined Platform-Ladder",
+          "synonyms": [
+            "Combined",
+            "Platform",
+            "Platform-Ladder",
+            "CPL",
+            "2.4) Combined Platform-Ladder",
+            "2.4"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2.5 Aerial Ladder",
+          "synonyms": [
+            "Aerial",
+            "Aerial Ladder",
+            "AL",
+            "2.5) Aerial Ladder",
+            "2.5"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2.7 Damage Control Tender",
+          "synonyms": [
+            "Damage",
+            "Control",
+            "Damage Control Tender",
+            "2.7) Damage Control Tender",
+            "2.7",
+            "DCT"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2.8 Fire and Rescue Operations Support Tender",
+          "synonyms": [
+            "Rescue",
+            "Operations",
+            "Support",
+            "FROST",
+            "Fire and Rescue Operations Support Tender",
+            "2.8) Fire and Rescue Operations Support Tender",
+            "2.8"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2.9 Tracked Firefighting Vehicle",
+          "synonyms": [
+            "Tracked",
+            "Tracked Firefighting Vehicle",
+            "TFV",
+            "2.9) Tracked Firefighting Vehicle",
+            "2.9"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "3. Hazmat Appliances",
+          "synonyms": [
+            "Hazmat",
+            "Appliances",
+            "Hazmat Appliances",
+            "3) Hazmat Appliance",
+            "3"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "3.1 Hazmat Mitigation Vehicle",
+          "synonyms": [
+            "Mitigation",
+            "Hazmat Mitigation Vehicle",
+            "3.1) Hazmat Mitigation Vehicle",
+            "3.1"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "3.2 Hazmat Decon Pod",
+          "synonyms": [
+            "Decon",
+            "Pod",
+            "Hazmat Decon Pod",
+            "3.2) Hazmat Decon Pod",
+            "3.2"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "3.3 Mass Decontamination Vehicle",
+          "synonyms": [
+            "Mass",
+            "Decontamination",
+            "Mass Decontamination Vehicle",
+            "MDV",
+            "3.3) Mass Decontamination Vehicle",
+            "3.3"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "3.4 HazMat Control Vehicle",
+          "synonyms": [
+            "Control",
+            "HazMat Control Vehicle",
+            "3.4) HazMat Control Vehicle",
+            "3.4"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "4. Command Elements",
+          "synonyms": [
+            "Command",
+            "Elements",
+            "Command Elements",
+            "4) Command Elements",
+            "4"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "4.1 Forward Command Vehicle",
+          "synonyms": [
+            "Forward",
+            "Forward Command Vehicle",
+            "4.2) Forward Command Vehicle",
+            "4.2",
+            "FCV"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "4.2 Command Vehicle",
+          "synonyms": [
+            "Command Vehicle",
+            "4.2) Command Vehicle",
+            "4.2",
+            "CV"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Announcement",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Announcement",
+          "synonyms": [
+            "Announcement",
+            "Statement",
+            "Report",
+            "Delcaration",
+            "Information",
+            "News",
+            "reports",
+            "statements",
+            "info",
+            "details",
+            "briefing",
+            "data",
+            "annoucement",
+            "statment",
+            "headlines",
+            "articles",
+            "updates"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Equipment Maintainence",
+          "synonyms": [
+            "Maintenance",
+            "upkeep",
+            "servicing",
+            "gear"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "temperature_check",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Normal temperature",
+          "synonyms": [
+            "35.5",
+            "35.6",
+            "35.7",
+            "35.8",
+            "35.9",
+            "36.0",
+            "36.1",
+            "36.2",
+            "36.3",
+            "36.4",
+            "36.5",
+            "36.6",
+            "36.7",
+            "36.8",
+            "36.9",
+            "37.0",
+            "37.1",
+            "37.2",
+            "37.3",
+            "37.4",
+            "37.5"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "illness",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Unwell",
+          "synonyms": [
+            "Unwell",
+            "Sick",
+            "Ill",
+            "Feverish",
+            "Under the weather"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No announcements for today, stay tuned!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1592079906123",
+      "conditions": "#Announcements",
+      "dialog_node": "response_5_1592080218442",
+      "previous_sibling": "response_3_1592079916011"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No new updates on the equipment, but please be reminded to perform regular checks, and report any faults to the relevant superiors, for both the safety of yourself as well as others"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1592079906123",
+      "conditions": "@EquipmentType:(List of Equipment)",
+      "dialog_node": "response_3_1592079916011"
+    },
+    {
+      "type": "standard",
+      "title": "Firefighting Appliances",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which of these vehicles or equipment would you like to know more about?\n2.1) Fire Bike\n2.2) Light Fire Attack Vehicle (LFAV)\n2.3) Pump Ladder (PL)\n2.4) Combined Platform-Ladder (CPL)\n2.5) Aerial Ladder (AL)\n2.6) Breathing Apparatus Tender (BAT)\n2.7) Damage Control Tender (DCT)\n2.8) Fire and Rescue Operations Support Tender (FROST)\n2.9) Tracked Firefighting Vehicle (TFV)\n2.10) Modular Oil Tank Firefighting System (MOTFS)\n2.11) Unmanned Firefighting Machine (UFM)\n2.12) Pumper Firefighting Machine"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1592042562359",
+      "conditions": "@EquipmentType:(2. Firefighting Appliances)",
+      "dialog_node": "node_7_1592055940819",
+      "previous_sibling": "node_7_1592042646894"
+    },
+    {
+      "type": "standard",
+      "title": "Command Elements",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which of these vehicles would you like to know more about?\n4.1) Forward Command Vehicle (FCV)\n4.2) Command Vehicle (CV) and Forward Command Vehicle (FCV)\n4.3) Hazmat Command Vehicle (HCV)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1592042562359",
+      "conditions": "@EquipmentType:(4. Command Elements)",
+      "dialog_node": "node_8_1592075571178",
+      "previous_sibling": "node_6_1592074176418"
+    },
+    {
+      "type": "standard",
+      "title": "Special Vehicles",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which of these vehicles would you like to know more about?\n5.1) DART Rescue Vehicle (DRV)\n5.2) Fireboats"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1592042562359",
+      "conditions": "@EquipmentType:(5. Special Vehicles)",
+      "dialog_node": "node_8_1592077093538",
+      "previous_sibling": "node_8_1592075571178"
+    },
+    {
+      "type": "standard",
+      "title": "Hazmat Appliances",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which of these vehicles or equipment would you like to know more about?\n3.1) Hazmat Mitigation Vehicle\n3.2) Hazmat Decon Pod\n3.3) Mass Decontamination Vehicle (MDV)\n3.4) HazMat Control Vehicle"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1592042562359",
+      "conditions": "@EquipmentType:(3. Hazmat Appliances)",
+      "dialog_node": "node_6_1592074176418",
+      "previous_sibling": "node_7_1592055940819"
+    },
+    {
+      "type": "standard",
+      "title": "Paramedical Response Vehicles",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Which of these vehicles would you like to know more about?\n1.1) Ambulance\n1.2) Medical Support Vehicle (MSV)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1592042562359",
+      "conditions": "@EquipmentType:(1. Paramedical Response Vehiciles)",
+      "dialog_node": "node_7_1592042646894"
+    },
+    {
+      "type": "standard",
+      "title": "Medical Support Vehicle (MSV)",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Medical Support Vehicle (MSV) is a truck that is designed to provide on-site treatment capabilities for mass casualty incidents. \nOn reaching the incident site, it is able to fold out and expand to form a mobile aid station to perform on-site stabilisation and critical invasive medical treatment."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_7_1592042646894",
+      "conditions": "  @EquipmentType:(1.2 Medical Support Vehicle)",
+      "dialog_node": "node_1_1592045043840",
+      "previous_sibling": "node_2_1592044624874"
+    },
+    {
+      "type": "standard",
+      "title": "Ambulance",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The ambulance forms the backbone of Singapore's medical emergency response capability and is the most widely deployed appliance. \nEach ambulance is staffed by an ambulance driver, a paramedic, and an emergency medical technician. Occasionally, a Fire & Rescue Specialist (FRS) or ERS trainee may also be attached to an ambulance unit."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1592042646894",
+      "conditions": "@EquipmentType:(1.1 Ambulance)",
+      "dialog_node": "node_2_1592044624874"
+    },
+    {
+      "type": "standard",
+      "title": "HazMat Control Vehicle",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The HazMat Control Vehicle carries a chemical detector to detect and monitor chemical release from up to 5 km away. It is also fitted with a launchpad for unmanned aerial vehicles to extend the range and altitude of its chemical detection capabilities"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1592074176418",
+      "conditions": "@EquipmentType:(3.4 HazMat Control Vehicle)",
+      "dialog_node": "node_1_1592075212842",
+      "previous_sibling": "node_8_1592075138241"
+    },
+    {
+      "type": "standard",
+      "title": "Mass Decontamination Vehicle",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Mass Decontamination Vehicle (MDV) is a large bus that is able to transport personnel and equipment, perform the decontamination of a large number casualties, and convey the casualties to the hospital"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1592074176418",
+      "conditions": "@EquipmentType:(3.3 Mass Decontamination Vehicle)",
+      "dialog_node": "node_8_1592075138241",
+      "previous_sibling": "node_2_1592075089474"
+    },
+    {
+      "type": "standard",
+      "title": "Hazmat Decon Pod",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Hazmat Decon Pod sucks in contaminated air and purifies it at a high rate to remove atmospheric toxic material and render an area more hospitable for work following a chemical, biological, radiological and nuclear incident."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1592074176418",
+      "conditions": "@EquipmentType:(3.2 Hazmat Decon Pod)",
+      "dialog_node": "node_2_1592075089474",
+      "previous_sibling": "node_4_1592074518916"
+    },
+    {
+      "type": "standard",
+      "title": "Hazmat Mitigation Vehicle",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Hazmat Mitigation Vehicle (HMV) transports Hazmat crew and their equipment to an incident insight. The HMV carries a Hazmat Utility Buggy (HUB) in the rear of the appliance, where it can be unloaded to assess incident developments, transport equipment and convey casualties out of the hazard area."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1592074176418",
+      "conditions": "@EquipmentType:(3.1 Hazmat Mitigation Vehicle)",
+      "dialog_node": "node_4_1592074518916"
+    },
+    {
+      "type": "standard",
+      "title": "Command Vehicle",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Command Vehicle (CV) functions as a mobile headquarters command and control centre. The vehicles are the size of a large bus, and when deployed, the body of the vehicle stretches to thrice its size on the road, allowing ample space inside the vehicle for personnel and essential computer and communications equipment. CVs are deployed to strategic locations to provide forward tactical headquarters capability in major incidents or high-risk events."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1592075571178",
+      "conditions": "@EquipmentType:(4.2 Command Vehicle)",
+      "dialog_node": "node_3_1592076765593",
+      "previous_sibling": "node_4_1592076725863"
+    },
+    {
+      "type": "standard",
+      "title": "Hazmat Command Vehicle",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Hazmat Command Vehicle (HCV) is a command post specifically designed for command and control during a CBR incident. It is equipped for this task with a wide array of instruments and sensors which can, for example, monitor and help predict toxic material presence and dispersion in the wind."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1592075571178",
+      "conditions": "@EquipmentType:(4.3 Hazmat Command Vehicle)",
+      "dialog_node": "node_5_1592076809512",
+      "previous_sibling": "node_3_1592076765593"
+    },
+    {
+      "type": "standard",
+      "title": "Forward Command Vehicle",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Forward Command Vehicle (FCV) is a mobile communications and control centre and is deployed during major incidents requiring division-level advanced command capabilities."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1592075571178",
+      "conditions": "@EquipmentType:(4.1 Forward Command Vehicle)",
+      "dialog_node": "node_4_1592076725863"
+    },
+    {
+      "type": "standard",
+      "title": "Fireboats",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "In 2012, the Singapore Civil Defence Force took over responsibility from the Maritime Port Authority for fighting maritime fires. By 2019, the SCDF Marine Division had retired some old fireboats, and added six new modern vessels, bringing the size of the firefighting fleet to eight vessels. One of the new vessels, the Red Sailfish, is the most powerful fireboat in the world so far."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "The Firefighter II was a legacy fireboat, previously operated by the Maritime Port Authority.",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/3/39/Chemical_spill_simulation%2C_Singapore%2C_2013.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_8_1592077093538",
+      "conditions": "@EquipmentType:(5.2 Fireboats)",
+      "dialog_node": "node_4_1592078464086",
+      "previous_sibling": "node_10_1592078319991"
+    },
+    {
+      "type": "standard",
+      "title": "DART Rescue Vehicle",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The DART Rescue Vehicle (DRV) is a specialised appliance of the Disaster Assistance and Rescue Team designed for urban search and rescue. It carries a personnel cabin and can accommodate up to eight DART officers with their equipment. The DRV is equipped with a crane with a load capacity of 7.9 tonnes. It is primarily used to load other rescue vehicles like the DART skid loader, which is used to access confined spaces in collapsed buildings"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1592077093538",
+      "conditions": "@EquipmentType:(5.1 DART Rescue Vehicle)",
+      "dialog_node": "node_10_1592078319991"
+    },
+    {
+      "type": "standard",
+      "title": "Light Fire Attack Vehicle",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Light Fire Attack Vehicle (LFAV), also known as the Red Rhino, was first introduced in 2000. It is designed to be more compact than a traditional fire engine, allowing it to be stationed at a larger variety of locations."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "values": [
+              {
+                "text": "The most recent iteration is the 6th generation, unveiled in 2018 at the SCDF Workplan Seminar. Instead of the traditional 4-man crew in the previous LFAV generations, the 6th generation carries a robot named the Red Rhino Robot (3R) which fits in the rear passenger compartment. The 3R conducts reconnaissance operations to locate the seat of fire through the use of thermal imaging and relay the information to the operator, who can then direct firefighting operations. The robot is able to mitigate a fire within confines of approximately 15 square meters"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1592055940819",
+      "conditions": "@EquipmentType:(2.2 Light Fire Attack Vehicle)",
+      "dialog_node": "node_9_1592057482096",
+      "previous_sibling": "node_2_1592057415050"
+    },
+    {
+      "type": "standard",
+      "title": "Combined Platform-Ladder",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Combined Platform-Ladder (CPL) is a hydraulic ladder-platform truck which is used to conduct external firefighting and rescue operations involving high-rise buildings. There are several variants of CPL in SCDF, the largest being the CPL60 which can extend its platform ladder up to a maximum height of 60 metres, the equivalent of a 20-storey building. Its platform is equipped with a water monitor capable of discharging water at the rate of 3,800 litres per minute, and a rescue cage that can hold up to 500 kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "A Combined Platform Ladder (CPL)",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/2/26/Combined_Platform_Ladder_%28CPL%29_Vehicle%2C_Singapore_Civil_Defence_Force%2C_Nov_06.JPG",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_7_1592055940819",
+      "conditions": "@EquipmentType:(2.4 Combined Platform-Ladder)",
+      "dialog_node": "node_7_1592072186106",
+      "previous_sibling": "node_8_1592071797375"
+    },
+    {
+      "type": "standard",
+      "title": "Damage Control Tender",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Damage Control Tender (DCT) is a support appliance deployed in major incidents to support firefighters with smoke and water extraction operations."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1592055940819",
+      "conditions": "@EquipmentType:(2.7 Damage Control Tender)",
+      "dialog_node": "node_3_1592073552989",
+      "previous_sibling": "node_6_1592073467553"
+    },
+    {
+      "type": "standard",
+      "title": "Unmanned Firefighting Machine",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Unmanned Firefighting Machine (UFM) is a remote controlled fire-fighting unit built to operate in extreme heat and hazardous environments, by using high velocity airflow to create ventilation in smoke-logged areas, and intense water mist, jet or foam to put out fires. It was first launched in April 2014. In 2015, the UFM added a rail kit to enable the unit to maneuver in Mass Rapid Transit tunnels at up to 40 km/h to put out fires and conduct ventilation operations"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1592055940819",
+      "conditions": "@EquipmentType:(2.11 Unmanned Firefighting Machine)",
+      "dialog_node": "node_4_1592073921115",
+      "previous_sibling": "node_7_1592073841686"
+    },
+    {
+      "type": "standard",
+      "title": "Modular Oil Tank Firefighting System",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Modular Oil Tank Fire-Fighting System (MOTFS) is a oil tank fire fighting system capable of discharging large volumes of foam for large-scale fires, up to 100,000 litres per minute. It is also capable of drafting water supply directly from open sources such as the sea or marine vessels. It is also designed in a modular form to speed up deployment to match the scale of the incident"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1592055940819",
+      "conditions": "@EquipmentType:(2.10 Modular Oil Tank Firefighting System)",
+      "dialog_node": "node_7_1592073841686",
+      "previous_sibling": "node_4_1592073770348"
+    },
+    {
+      "type": "standard",
+      "title": "Breathing Apparatus Tender",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Breathing Appartus Tender (BAT) is a support appliance deployed in major incidents to provide firefighters with self-contained breathing apparatus to manage prolonged operations. It is also equipped with thermal image cameras and gas detectors to facilitate rescue operations during smoke-logged conditions."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1592055940819",
+      "conditions": "@EquipmentType:(2.6 Breathing Apparatus Tender)",
+      "dialog_node": "node_6_1592073467553",
+      "previous_sibling": "node_7_1592072514741"
+    },
+    {
+      "type": "standard",
+      "title": "Pumper Firefighting Machine",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The custom-built Pumper Firefighting Machine can traverse up and down a staircase, fit into passenger lifts and penetrate through premises with a maximum temperature of 250-degree Celsius for up to 10 minutes. Other unique features include a rotating nozzle that can project water mist in 360-degree angles to quickly lower room temperatures and a high pressure hose reel with a built-in water tank that can allow firefighters to quickly initiate firefighting operations at incidents. Its resistance to heat also means that firefighters will be less exposed to risk during firefighting operations."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1592055940819",
+      "conditions": "@EquipmentType:(2.12 Pumper Firefighting Machine)",
+      "dialog_node": "node_6_1592074071212",
+      "previous_sibling": "node_4_1592073921115"
+    },
+    {
+      "type": "standard",
+      "title": "Fire and Rescue Operations Support Tender",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Fire and Rescue Operations Support Tender (FROST) is a support appliance that combines the functions of the BAT and the DCT, halving the total manpower needed for these functions from eight to four."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1592055940819",
+      "conditions": "@EquipmentType:(2.8 Fire and Rescue Operations Support Tender)",
+      "dialog_node": "node_8_1592073690248",
+      "previous_sibling": "node_3_1592073552989"
+    },
+    {
+      "type": "standard",
+      "title": "Pump Ladder",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Pump Ladder (PL) is the workhorse fire engine of the SCDF. It carries 2,400 litres of water and 1,200 litres of foam, along with other rescue and firefighting equipment. \nThe PL is also equipped to set up hasty decontamination facilities for a chemical incident. The decontamination lanes can be set up within four minutes, and each lane is able to decontaminate up to 36 walking casualties or six lying casualties per hour. \nThe Generation E of the PL features a compress air foam pump."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Generation E of the SCDF Pump Ladder featuring a Compressed Air Foam (CAF) pump",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/b/b1/CAF_pumper.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_7_1592055940819",
+      "conditions": "@EquipmentType:(2.3 Pump Ladder)",
+      "dialog_node": "node_8_1592071797375",
+      "previous_sibling": "node_9_1592057482096"
+    },
+    {
+      "type": "standard",
+      "title": "Tracked Firefighting Vehicle",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Tracked Firefighting Vehicle (TFV) is a Bandvagn 206 that is used in forested areas where wheeled vehicles may have difficulty navigating. These vehicles were transferred from the Singapore Armed Forces to the SCDF and subsequently repainted and fitted with firefighting equipment and capabilities."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1592055940819",
+      "conditions": "@EquipmentType:(2.9 Tracked Firefighting Vehicle)",
+      "dialog_node": "node_4_1592073770348",
+      "previous_sibling": "node_8_1592073690248"
+    },
+    {
+      "type": "standard",
+      "title": "Aerial Ladder",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Aerial Ladder (AL) is a ladder truck used in the SCDF for aerial firefighting and rescue. It has an operational height of 56 metres."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1592055940819",
+      "conditions": "@EquipmentType:(2.5 Aerial Ladder)",
+      "dialog_node": "node_7_1592072514741",
+      "previous_sibling": "node_7_1592072186106"
+    },
+    {
+      "type": "standard",
+      "title": "Fire Bike",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Fire Bike is a three-wheeled Piaggio MP3 that carries a single firefighter. \nThey are able to navigate traffic to provide a faster initial response to emergencies. \nThe Fire Bike carries a compressed air foam backpack which can extinguish handle smaller conflagrations such as household and vehicle fires. It is also equipped with an automated external defibrillator to respond to medical emergencies in concert with an ambulance."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "A fire bike",
+            "source": "https://upload.wikimedia.org/wikipedia/commons/b/b2/3_wheeler_FB_%28Red_Scorpions%29.JPG",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_7_1592055940819",
+      "conditions": "@EquipmentType:(2.1 Fire Bike)",
+      "dialog_node": "node_2_1592057415050"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "no u"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1592018812255",
+      "conditions": "anything_else",
+      "dialog_node": "node_2_1592049749233",
+      "previous_sibling": "node_5_1592048634950"
+    },
+    {
+      "type": "standard",
+      "title": "Temperature check",
+      "parent": "node_10_1592018812255",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@sys-number",
+      "dialog_node": "node_5_1592048634950"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your temperature is higher than normal"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Please take care of yourself and drink lots of water, if possible please visit a doctor"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1592048634950",
+      "conditions": "@sys-number > 37.4 && @sys-number < 44",
+      "dialog_node": "response_5_1592050164462",
+      "previous_sibling": "response_7_1592050013507"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your body temperature suggests that you are fine"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "However, should the feeling persist, take your temperature again"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1592048634950",
+      "conditions": "@sys-number > 35.4 && @sys-number < 37.6",
+      "dialog_node": "response_7_1592050013507",
+      "previous_sibling": "response_8_1592049849132"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your body temperature is lower than normal, you may be ill"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "It would be advisable to go see a doctor, or to rest up at home alone"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1592048634950",
+      "conditions": "@sys-number > 0 && @sys-number < 35.5",
+      "dialog_node": "response_8_1592049849132"
+    },
+    {
+      "type": "standard",
+      "title": "Equipment",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "What equipment would you like to know about?\n1) Paramedical Response Vehicles\n2) Firefighting Appliances\n3) Hazmat Appliances\n4) Command Elements\n5) Special Vehicles"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#Equipment || @EquipmentType:(List of Equipment)",
+      "dialog_node": "node_10_1592042562359",
+      "previous_sibling": "node_2_1592079906123"
+    },
+    {
+      "type": "standard",
+      "title": "Temperature Taking",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please take your temperature with a thermometer, and key in the temperature obtained"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Illness || @illness",
+      "dialog_node": "node_10_1592018812255",
+      "previous_sibling": "node_10_1592042562359"
+    },
+    {
+      "type": "standard",
+      "title": "Announcements",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Announcements && @Announcement",
+      "dialog_node": "node_2_1592079906123",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_10_1592018812255",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you?"
+              },
+              {
+                "text": "How can I assist you today?"
+              },
+              {
+                "text": "How may I be of service today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Reminder to stay hydrated!"
+              },
+              {
+                "text": "Reminder to take a break if you've been working too long!"
+              },
+              {
+                "text": "Reminder to aim for 8 hours of sleep a day"
+              },
+              {
+                "text": "Reminder to check your schedule for any upcoming meetups"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "34"
+    }
+  ],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "SCDF",
+  "language": "en",
+  "description": ""
+}
