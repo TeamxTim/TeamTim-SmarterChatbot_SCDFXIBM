@@ -71,7 +71,9 @@ For the Chatbot :
 
 6) Import the skill-scdf
  
-For the Artificial Intelligence : 1) Launch the JSON file
+For the Artificial Intelligence : 
+
+1. Launch the JSON file
  
 For the Image Recognition :
 1) Unzip the file
