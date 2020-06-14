@@ -39,18 +39,23 @@ User -> Image -> Image Recognition -> Response ->User
 Our solutions have 3 parts : Chatbot, Artificially Intelligence and Image Recognition
 
 
-[Image Recognition](https://github.com/TeamxTim/TeamTim-SmarterChatbot_SCDFXIBM/blob/master/model.zip)
-[Chatbot](https://github.com/TeamxTim/TeamTim-SmarterChatbot_SCDFXIBM/blob/master/skill-SCDF.json)
 
 ### Chatbot
+
+[code](https://github.com/TeamxTim/TeamTim-SmarterChatbot_SCDFXIBM/blob/master/skill-SCDF.json)
 
 For the chatbot, its main purpose is to assist newer staff by providing common information and knowledge. This will help the staff-in-charge to have more time to do other more important things. Firstly, the user must type the message into the chatbot. The chatbot will then find entities or intents in the message and look for the response to answer the user.
 
 ### Artificial Intelligence (AI)
 
+[code](https://github.com/TeamxTim/TeamTim-SmarterChatbot_SCDFXIBM/blob/master/10.15.js)
+
 For the AI, its main purpose is to help to find out if the staff is suited for that type of training. For the AI, provided in the code, it uses mock data to predict if the risk of a staff being able to carry out that type of training ( Good risk or Bad risk). This will help better allocate manpower to training. Hence, improving efficiency. Firstly, you need to enter a few information into the AI. Then, the AI will be able to predict based on previous data input and give an appropriate prediction. The prediction will be better, if there is a large data set, example 1000 data set given.
 
 ### Image Recognition
+
+
+[code](https://github.com/TeamxTim/TeamTim-SmarterChatbot_SCDFXIBM/blob/master/model.zip)
 
 For the Image Recognition, its main purpose it to help the officers of SCDF, predict based on the given situation. For the Image Recognition, provided in the code repository, it uses labelled images to find similarities in the images. When a new image is provided into the code, it will be able to find the similarities in the image and give an appropriate prediction. This is more helpful to new staff as it can tell them the risks involve in this training. The more images in different categories is uploaded to this image recognition, the more accurate the prediction will be.
 
