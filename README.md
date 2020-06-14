@@ -41,7 +41,8 @@ User -> Image -> Image Recognition -> Response ->User
 Our solutions have 3 parts : Chatbot, Artificially Intelligence and Image Recognition
 
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+[Image Recognition](https://github.com/TeamxTim/TeamTim-SmarterChatbot_SCDFXIBM/blob/master/model.zip)
+[Chatbot](https://github.com/TeamxTim/TeamTim-SmarterChatbot_SCDFXIBM/blob/master/skill-SCDF.json)
 
 ### Chatbot
 
